@@ -1,0 +1,341 @@
+*{
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	box-sizing: border-box;
+	text-align: justify;
+}
+.container{
+	width: 87%;
+	margin: 0 auto;
+	background: #f4f4f4;
+}
+.active{
+	font-weight: bolder;
+}
+
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*
+ * ===================================================================
+ * 1--------------------------HEADER-SECTION--------------------------
+ * ------------------------------------------------------------------- 
+ */
+/*-------------Extra classes for responsive navbar-------------------*/
+.ham{
+	color: #fff;
+	font-size: 1.8em;
+	cursor: pointer;
+}
+.handle{
+	width: 100%;
+	text-align: left;
+	padding: 15px 10px;
+	cursor: pointer;
+	display: none;
+	box-sizing: border-box;
+}
+.logo1{
+	display: none;
+	font-family: 'Rouge Script', cursive;
+}
+/*-----------------------Navigation bar------------------------------*/
+nav{
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+	text-align: right;
+	background: rgba(212,212,212,.5);
+	/*height: 60px;*/
+}
+nav ul .logo{
+	float: left;
+	padding: .3em .4em;
+	font-family: 'Rouge Script', cursive;
+	font-size: 2em;
+	cursor: pointer;
+}
+nav ul li{
+	display: inline-block;
+	padding: 1.2em .7em;
+	text-transform: uppercase;
+}
+nav li a{
+	color: #333;
+	transition: ease-in .3s;
+}
+nav li a:hover{
+	text-decoration: none;
+	padding-top: .7em;
+	border-top: 2px solid #333;
+}
+/*-----------------------Banner Image and Text-------------------------*/
+.hero{
+	background: url('../images/image.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed; 
+	height: 100vh;
+	position: relative;
+}
+.hero h2{
+	padding-top: 35vh;
+	text-align: center;
+	font-size: 5vw;
+	font-family: serif,helvetica;
+}
+.hero h3{
+	text-align: center;
+	font-size: 3vw;
+	color: #333;
+	margin-bottom: 3em;
+}
+/*--------------------------Download Buttons-------------------------*/
+.btn{
+	border: 2px solid #00ff6c;
+	color: #333;
+	padding: .5em 1em;
+	font-size: 18px;
+	font-family: tahoma,sans-serif;
+	transition: ease-in .3s;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.btn:hover{
+	background: #00ff6c; 
+	color: #fff;
+}
+/*
+ * ===================================================================
+ * 2--------------------------ABOUT_ME-SECTION------------------------
+ * ------------------------------------------------------------------- 
+ */
+/*--------------------------About_me Containers-------------------------*/
+.aboutmain{
+	display: -o-flex;
+	display: -webkit-flex;
+	display: flex;
+	margin-top: 1em;
+}
+.about{
+	background: #000;
+	margin-top: 1.6em;
+	padding: 2.6em;
+	outline: 2px solid #00ff6c;
+	-webkit-outline-offset: -1.1em;
+	outline-offset: -1.1em;
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	top: -4.7em;
+	-webkit-box-shadow: 0px 0px 37px 0px #333;
+	box-shadow: 0px 0px 37px 0px #333;
+	border-radius: .4em;
+	width: 60%;
+}
+/*-------------------------About_me Texts------------------------------*/
+.about h2{
+	position: absolute;
+	top: .1em;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	text-align: center;
+	background: #000;
+	color: #00ff6c;
+	font-family: helvetica,tahoma,sans-serif;
+	padding: 0 1em;
+	font-size: 1.4em ;
+}
+.about p{
+	color: #eee;
+	padding-top: 1.5em;
+}
+.photo{
+	background: url('../images/photo.jpg') no-repeat center center;
+	background-size: cover;
+	border-radius: 1em;
+	width: 35%;
+	margin: 1em 1.5em;
+	-webkit-box-shadow: 0px 0px 37px 0px #333;
+	box-shadow: 0px 0px 57px 0px #333;
+}
+/*
+ * ===================================================================
+ * 3--------------------------SKILLS-SECTION--------------------------
+ * ------------------------------------------------------------------- 
+ */
+/*---------------------------skill containers--------------------------*/
+.skills{
+	display: -o-flex;
+	display: -webkit-flex;
+	display: flex;
+	margin-top: 1em;
+}
+.skill{
+	background: #eae6e6;
+	padding: 2em;
+	margin-right: 1.4em;
+	margin-top: 3em;
+	-webkit-box-shadow: 5px 8px 10px 0px rgba(0,0,0,.4);
+	box-shadow: 5px 8px 10px 0px rgba(0,0,0,.4);
+	border-radius: 6px;
+	font-family: 'Roboto', sans-serif;
+	-webkit-flex: 1;
+	flex: 1;
+}
+/*-----------------------------skill texts--------------------------*/
+.skills h2{
+	text-align: center;
+}
+.skill:last-child{
+	margin-right: 0;
+}
+.skill i{
+	margin-left: 41%;
+	font-size: 4em;
+}
+/*-------------------------Special class--------------------------*/
+.head{
+	text-align: center;
+	margin-top: 1em;
+	color: #00ff6c;
+	text-decoration: underline;
+	font-family: 'Rouge Script', cursive;
+	font-size: 3em;
+	font-weight: bolder;
+}
+/*
+ * ===================================================================
+ * 3-------------------------CONTACTS-SECTION-------------------------
+ * ------------------------------------------------------------------- 
+ */
+/*--------------------------Contacts Containers-----------------------*/
+.contacts{
+	display: -o-flex;
+	display: -webkit-flex;
+	display: flex;
+	-ms-align-items: center;
+	-webkit-align-items: center;
+	align-items: center;
+	padding-bottom: 4em;
+}
+.contact{
+	background: #eae6e6;
+	padding: 3em;
+	margin-top: 3em;
+	flex-basis: 33%;
+}
+/*--------------------------Contact texts-----------------------*/
+.contact li{
+	font-size: 2em;
+}
+.contact li a{
+	color: #333;
+}
+.contact li a:hover{
+	color: blue;
+}
+.contact h2,li,p{
+	text-align: center;
+	color: rgba(0,0,0,.7);
+}
+.contact:first-child{
+	background: #333;
+}
+.contact:nth-child(2)
+{
+	background: #d2d2d2;
+}
+.contact:last-child{
+	margin-right: 0;
+	background: rgba(215,215,215,.5);
+}
+/*
+ * ===================================================================
+ * 4-------------------------FOOTER-SECTION---------------------------
+ * ------------------------------------------------------------------- 
+ */
+footer{
+	background: rgba(212,212,212,.5);
+	padding: 2em;
+	text-align: center;
+	font-size:4vw;
+	font-family: 'Rouge Script', cursive;
+}
+
+/*
+ * ===================================================================
+ * 3---------------------------MEDIA QUERIES--------------------------
+ * ------------------------------------------------------------------- 
+ */
+@media screen and (max-width:900px) {
+	/*--------------Navigation section-------------*/
+	.handle{
+		display: block;
+	}
+	nav{
+		position: relative;
+	}
+	nav ul{
+		max-height: 0;
+		background: none;
+	}
+	.show{
+		max-height: 20em;
+	}
+	nav ul li{
+		width: 100%;
+		box-sizing: border-box;
+		text-align: left;
+		padding: 10px;
+		padding-left: 30px;
+	}
+	nav li:hover{
+		background: rgba(212,212,212,.5);
+	}
+	nav li a{
+		transition: none;
+		border:none;
+	}
+	nav li a:hover{
+		text-decoration: none;
+		border: none;	
+	}
+	.logo{
+		display: none;
+	}
+	.logo1{
+		display: block;
+		text-align: center;
+		font-family: 'Rouge Script', cursive,sans-serif;
+		font-size: 2em;
+	}
+	/*--------------AboutMe section-------------*/
+	.photo{
+		display: none;
+	}
+	.about{
+		width: 100%;
+	}
+	/*--------------Skills -------------*/
+	.skills,.contacts{
+		display: block;
+		padding-bottom: 1em;
+	}
+	.skill,.contact{
+		margin : 0 0 2em 0;
+	}
+	.skill i{
+		margin-left: 38%;
+	}	
+}
