@@ -72,6 +72,7 @@ nav ul li{
 nav li a{
 	color: #333;
 	transition: ease-in .3s;
+	font-family: helvetica;
 }
 nav li a:hover{
 	text-decoration: none;
@@ -96,16 +97,16 @@ nav li a:hover{
 	text-align: center;
 	font-size: 3vw;
 	color: #333;
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 }
 /*--------------------------Download Buttons-------------------------*/
 .btn{
 	border: 2px solid #00ff6c;
 	color: #333;
-	padding: .5em 1em;
+	padding: .4em .8em;
 	font-size: 18px;
 	font-family: tahoma,sans-serif;
-	transition: ease-in .3s;
+	transition: ease-in .4s;
 	position: absolute;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
@@ -159,6 +160,7 @@ nav li a:hover{
 .about p{
 	color: #eee;
 	padding-top: 1.5em;
+	text-align: justify;
 }
 .photo{
 	background: url('../images/photo.jpg') no-repeat center center;
@@ -196,6 +198,9 @@ nav li a:hover{
 /*-----------------------------skill texts--------------------------*/
 .skills h2{
 	text-align: center;
+}
+.skills p{
+	text-align: justify;
 }
 .skill:last-child{
 	margin-right: 0;
@@ -269,7 +274,7 @@ footer{
 	background: rgba(212,212,212,.5);
 	padding: 2em;
 	text-align: center;
-	font-size:4vw;
+	font-size: 2em;
 	font-family: 'Rouge Script', cursive;
 }
 
@@ -338,4 +343,9 @@ footer{
 	.skill i{
 		margin-left: 38%;
 	}	
+
+	/*--------------footer-------------*/
+	footer{
+	font-size: 1.4em;
+	}
 }
